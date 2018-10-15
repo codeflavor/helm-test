@@ -1,3 +1,7 @@
+@Library('helm@master') _
+
 node {
-     echo "test"
+     stage('test lib') {
+          helm()
+     }
 }
